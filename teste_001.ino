@@ -32,5 +32,5 @@ void loop() {
 digitalWrite(LED_BUILTIN, HIGH); // liga o LED (HIGH é o nível de tensão)
 delay(1000); // espera por um segundo
 digitalWrite(LED_BUILTIN, LOW); // desliga o LED tornando a tensão baixa
-delay(1000); // espera por um segundo
+delay(2000); // espera por um segundo
 }
