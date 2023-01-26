@@ -1,37 +1,36 @@
 /*
-  Blink
+Piscar
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+Liga um LED por um segundo, depois desliga por um segundo, repetidamente.
 
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set toseap@gmail.com
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://www.arduino.cc/en/Main/Products
+A maioria dos Arduinos possui um LED embutido que você pode controlar. No UNO, MEGA e ZERO,
+ele está conectado ao pino digital 13, no MKR1000 no pino 6. O LED_BUILTIN está configurado para
+o pino de LED correto independentemente do modelo de placa usado.
+Se você quiser saber em qual pino o LED embutido está conectado em seu modelo Arduino, verifique as Especificações Técnicas de sua placa em:
+https://www.arduino.cc/en/Main/Products
 
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
+modificado em 8 de maio de 2014
+por Scott Fitzgerald
+modificado em 2 de setembro de 2016
+por Arturo Guadalupi
+modificado em 8 de setembro de 2016
+por Colby Newman
 
-  This example code is in the public domain.
+Este código de exemplo está no domínio público.
 
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
-// the setup function runs once when you press reset or power the board
+// a função de configuração é executada uma vez quando você pressiona o reset ou alimenta a placa
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+// inicializa o pino digital LED_BUILTIN como saída.
+pinMode(LED_BUILTIN, OUTPUT);
 }
 
-// the loop function runs over and over again forever
+// a função loop é executada continuamente
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+digitalWrite(LED_BUILTIN, HIGH); // liga o LED (HIGH é o nível de tensão)
+delay(1000); // espera por um segundo
+digitalWrite(LED_BUILTIN, LOW); // desliga o LED tornando a tensão baixa
+delay(1000); // espera por um segundo
 }
