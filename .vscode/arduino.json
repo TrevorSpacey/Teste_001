@@ -1,0 +1,6 @@
+{
+    "sketch": "teste_001.ino",
+    "configuration": "cpu=atmega328",
+    "board": "arduino:avr:diecimila",
+    "port": "COM3"
+}
